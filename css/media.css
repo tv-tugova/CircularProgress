@@ -1,0 +1,14 @@
+@media screen and (orientation: landscape) {
+  .progress {
+    flex-direction: row;
+    max-width: 568px;
+  }
+  #svg {
+    margin: auto 0;
+    padding-left: 20px;
+  }
+  .progress__controls {
+    margin: auto 0;
+    padding-left: 75px;
+  }
+}
