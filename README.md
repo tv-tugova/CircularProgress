@@ -2,7 +2,7 @@
 
 ## Описание проекта
 
-CircularProgress -- это приложение, предназначенное для отображения прогрессса выполения процессов. Разработано с использованием HTML, CSS и JavaScript.
+CircularProgress -- это приложение, предназначенное для отображения процесса и прогресса выполения. Разработано с использованием HTML, CSS и JavaScript.
 
 ## Ссылка на сайт:
 
@@ -12,7 +12,7 @@ https://tv-tugova.github.io/CircularProgress
 
 - Валидация ввода
 - Управление индикатором выполения через числовое поле Value
-- Запуск анимации
+- Запуск анимации вращения
 - Изменение видимости progress bar
 - Адаптация под мобильные устройства и ориентацию экрана
 
@@ -35,3 +35,4 @@ https://tv-tugova.github.io/CircularProgress
 ![portrait](./screenshots/portrait.png)
 ![portrait-hide](./screenshots/portrait-hide.png)
 ![landscape](./screenshots/landscape.png)
+![landscape-animate](./screenshots/landscape-animate.png)
