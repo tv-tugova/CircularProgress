@@ -1,5 +1,5 @@
 const valueInput = document.getElementById("valueInput");
-const animatedCheckbox = document.getElementById("animateCheckbox");
+const animateCheckbox = document.getElementById("animateCheckbox");
 const hideCheckbox = document.getElementById("hideCheckbox");
 const progressBar = document.getElementById("svg");
 const progressCircle = document.getElementById("progress");
@@ -9,13 +9,7 @@ valueInput.addEventListener("input", (e) => {
   updateProgress(value);
 });
 
-animatedCheckbox.addEventListener("change", (e) => {
-  if (animatedCheckbox.checked) {
-    progressCircle.classList.add("animated");
-  } else {
-    progressCircle.classList.remove("animated");
-  }
-});
+animateCheckbox.addEventListener("change", updateAnimation);
 
 hideCheckbox.addEventListener("change", updateVisibility);
 
@@ -51,7 +45,13 @@ function updateProgress(value) {
   progressCircle.style.strokeDashoffset = dashoffset;
 }
 
-updateProgress(valueInput.value);
+function updateAnimation() {
+  if (animateCheckbox.checked) {
+    progressCircle.classList.add("animated");
+  } else {
+    progressCircle.classList.remove("animated");
+  }
+}
 
 function updateVisibility() {
   if (hideCheckbox.checked) {
